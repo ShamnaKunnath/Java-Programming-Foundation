@@ -29,5 +29,5 @@ public class Part4 {
     }
 }
 }
-
+//(taaindex==-1||(tgaindex!=-1 &&tgaindex<taaindex))  minIndex=tgaindex;
 
