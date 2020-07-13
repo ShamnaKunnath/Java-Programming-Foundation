@@ -6,11 +6,11 @@
  * @version (a version number or a date)
  */
 import edu.duke.*;
-import java.io.File;
+import java.io.*;
 public class Part4 {
     public void method(){
-    int temp=0;
-    URLResource url=new URLResource("http://www.dukelearntoprogram.com/course2/data/manylinks.htm");
+    int pos=0;
+    URLResource url =new URLResource("https://www.dukelearntoprogram.com//course2/data/manylinks.html");
     String str="";
     String result="";
     int start=0;
@@ -19,15 +19,14 @@ public class Part4 {
     for (String word : url.words()) {
         c=c+1;
         str=word.toLowerCase();
-        temp=str.indexOf("youtube.com");
-        if(temp!=-1){
-        start=str.lastIndexOf("\"", temp);
-        end=str.indexOf("\"",temp+1);
+        pos=str.indexOf("youtube.com");
+        if(pos!=-1){
+        start=str.lastIndexOf("\"", pos);
+        end=str.indexOf("\"",pos+1);
         result=word.substring(start+1,end); 
         System.out.println(result);
        }
     }
-    System.out.println("total no of words: "+c);
 }
 }
 
