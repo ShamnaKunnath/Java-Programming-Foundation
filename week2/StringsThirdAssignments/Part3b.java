@@ -105,6 +105,7 @@ public float cgRatio(String dna){
     public void testProcessGenes(){
     FileResource fr = new FileResource("brca1line.fa");
     String dna = fr.asString();
+    dna=dna.toUpperCase();
     StorageResource genes= getAllGenes(dna);
     processGenes(genes);
     System.out.println("Count of CTG "+countCTG(dna));
