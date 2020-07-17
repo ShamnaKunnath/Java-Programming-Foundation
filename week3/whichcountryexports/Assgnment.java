@@ -48,15 +48,15 @@ public class Assgnment {
  public void tester(){
         FileResource fr= new FileResource();
         CSVParser parser=fr.getCSVParser();
-        System.out.println(countryInfo(parser,"Nauru"));
+        //System.out.println(countryInfo(parser,"Nauru"));
         System.out.println("..............................");
         
         parser=fr.getCSVParser();
-        listExportersTwoProducts(parser,"fish","nuts");
+        listExportersTwoProducts(parser,"cotton","flowers");
         System.out.println("..............................");
         
         parser=fr.getCSVParser();
-        System.out.println(numberOfExporters(parser,"gold"));
+        System.out.println(numberOfExporters(parser,"cocoa"));
         System.out.println("..............................");
         
         parser=fr.getCSVParser();
